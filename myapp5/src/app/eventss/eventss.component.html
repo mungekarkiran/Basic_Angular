@@ -1,0 +1,42 @@
+<button (click)="printData()"> Click Me </button>
+<br><br>
+<button (click)="alertData()"> Alert Me </button>
+<br><br>
+
+<h2>Pass Data from button !!!</h2>
+<button (click)="passData1('hello i pass some data in string ...')"> pass data 1</button>
+<br><br>
+<button (click)="passData2(1254)"> pass data 2</button>
+<br><br>
+<button (click)="passData3('passData3 as a string ')"> pass data 3</button>
+<br><br>
+<button (click)="passData3(12886)"> pass data 3</button>
+<br><br>
+<button (click)="passData3('in string ...' + 5266)"> pass data 3</button>
+<br><br>
+
+<h2>Mouse Events !!!</h2>
+<h3 (mouseover)="printData()"> Lorem ipsum dolor sit amet. </h3>
+<br><br>
+<h3 (mouseout)="printData()"> Lorem ipsum dolor sit amet. </h3>
+<br><br>
+
+
+<h2>Send Value from input tag !!!</h2>
+<input #data (keydown)="sendVal1(data)" type="text" placeholder="Enter any value ">
+<br><br>
+
+<input #data1 (keydown)="sendVal2(data1)" type="text" placeholder="Enter any value ">
+<br><br>
+
+<input #data2 (keypress)="sendVal2(data2)" type="text" placeholder="Enter any value ">
+<br><br>
+
+<input #data3 (keyup)="sendVal2(data3)" type="text" placeholder="Enter any value ">
+<br><br>
+
+<input #data4 (input)="sendVal2(data4)" type="text" placeholder="Enter any value ">
+<br><br>
+
+<input #data5 (input)="sendVal3(data5.value)" type="text" placeholder="Enter any value ">
+<br><br>
