@@ -1,0 +1,46 @@
+<h1> {{title}} </h1>
+
+<h2>Problem in Interpolation</h2>
+<input type="text" disabled="{{true}}">
+<br>
+<input type="text" disabled="{{false}}">
+<br>
+
+
+<h2>Property Binding solution</h2>
+<input type="text" [disabled]="true">
+<br>
+<input type="text" [disabled]="false">
+<br>
+
+
+<h2>Controle using variable</h2>
+<h3>Value of variable : {{isdisabled1}} </h3>
+<label for="">Using Interpolation : </label>
+<input type="text" disabled="{{isdisabled1}}">
+<br>
+<label for="">Using Property Binding : </label>
+<input type="text" [disabled]="isdisabled1">
+<br>
+
+
+<h2>Controle using variable and button</h2>
+<h3>Value of variable : {{isdisabled2}} </h3>
+<label for="">Using Interpolation : </label>
+<input type="text" disabled="{{isdisabled2}}">
+<br>
+<label for="">Using Property Binding : </label>
+<input type="text" [disabled]="isdisabled2">
+<br>
+<button (click)="isdisabled2=!isdisabled2">Click me !!!</button>
+
+
+<h2>Controle using variable and button and function</h2>
+<h3>Value of variable : {{isdisabled3}} </h3>
+<label for="">Using Interpolation : </label>
+<input type="text" disabled="{{isdisabled3}}">
+<br>
+<label for="">Using Property Binding : </label>
+<input type="text" [disabled]="isdisabled3">
+<br>
+<button (click)="changeProp()">Click me !!!</button>

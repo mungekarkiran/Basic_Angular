@@ -1,6 +1,6 @@
 <h1> {{title}} </h1>
 
-<h2>Count : {{count}} </h2>
+<h2>Count : {{count}} {{count}} {{count}} {{count}} {{count}}</h2>
 <br>
 <button (click)="count = count+1"> Increase </button>
 <button (click)="count = count-1"> Decrease </button>
@@ -11,3 +11,18 @@
 <br>
 <button (click)="incCount()"> Increase </button>
 <button (click)="decCount()"> Decrease </button>
+
+<br><br>
+
+<h2>Count get by one function : {{count}} </h2>
+<br>
+<button (click)="myCount('add')"> Increase </button>
+<button (click)="myCount('sub')"> Decrease </button>
+
+
+<br><br>
+
+<h2>Count get by ternary operator : {{count}} </h2>
+<br>
+<button (click)="myCountTR('add')"> Increase </button>
+<button (click)="myCountTR('sub')"> Decrease </button>

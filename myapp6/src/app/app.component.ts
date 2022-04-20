@@ -18,4 +18,12 @@ export class AppComponent {
     this.count--;
   }
 
+  myCount(val : String){
+    if (val === 'add') this.count++;
+    else this.count--;
+  }
+
+  myCountTR(val : String){
+    val === 'add' ? this.count++ : this.count--;
+  }
 }
